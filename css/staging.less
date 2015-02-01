@@ -1,0 +1,201 @@
+//Import
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700|Droid+Serif:400,700,400italic,700italic|Montserrat:400,700);
+//Variables
+//Fonts
+@font_1: 'Source Sans Pro',
+sans-serif;
+@font_2: 'Droid Serif',
+serif;
+@font_3: 'Montserrat',
+sans-serif;
+//Colors
+@color_1: #354458;
+@white: #fff;
+@green: #16a085;
+@belize: #2980b9;
+@midnight: #2c3e50;
+//Plugins
+//Scrollspy
+.navbar-default .navbar-nav>.active>a {
+    color: #555;
+    background-color: #e7e7e7;
+}
+
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #a261e2;
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+    color: #a261e2;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover {
+    color: #a261e2;
+    background-color: transparent;
+}
+
+//LESS
+html,
+body {
+    font-family: @font_1;
+}
+
+.container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.bg-light-gray {
+    background-color: #f7f7f7;
+}
+
+//Nav
+@media(min-width:768px) {
+    .navbar-default {
+        padding: 25px 0;
+        border: 0;
+        background-color: transparent;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+    }
+    .navbar-default .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+    .navbar-default .navbar-brand:jover {
+        color: #8227b5;
+    }
+    .navbar-default .navbar-nav>a:hover {
+        color: #8227b5;
+    }
+    .navbar-default.navbar-shrink {
+        padding: 10px 0;
+        background-color: #222;
+    }
+    .navbar-default.navbar-shrink .navbar-brand {
+        font-size: 1.5em;
+    }
+}
+
+.navbar-default .navbar-brand {
+    color: @white;
+    font-family: @font_3;
+    text-transform: uppercase;
+}
+
+.navbar ul li {
+    font-family: @font_3;
+    text-transform: uppercase;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: @white
+}
+
+//Content
+header {
+    .header_wrapper {
+        height: 960px;
+        background-attachment: scroll;
+        background-image: url(../_/pic/background.jpg);
+        background-position: center center;
+        background-repeat: none;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+    }
+    .header_container {
+        text-align: center;
+        height: 100%;
+    }
+    .title {
+        height: 100%;
+        display: -webkit-flex;
+        -webkit-flex-direction: column;
+        -webkit-justify-content: center;
+        h1 {
+            font-family: @font_1;
+            font-weight: 300;
+            font-size: 96px;
+            letter-spacing: 1px;
+            color: @white;
+        }
+        p {
+            font-family: @font_3;
+            font-size: 18px;
+            text-transform: uppercase;
+            color: @white;
+        }
+        .title_plug_in {
+            background: transparent;
+            color: @white;
+            font-family: @font_3;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-radius: 0;
+            border: 3px solid @white;
+            padding-left: 56px;
+            padding-right: 56px;
+        }
+        .title_plug_in:hover {
+            background: @white;
+            color: @color_1;
+        }
+        .center_container {
+            width: auto;
+            text-align: center;
+        }
+    }
+}
+
+.section_align {
+    padding-top: 127px;
+    padding-bottom: 127px;
+}
+
+.content_title {
+    h1 {
+        font-family: @font_3;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    p {
+        font-family: @font_2;
+        font-style: italic;
+        color: grey;
+        font-size: 1.25em;
+    }
+}
+
+#community {
+    .center_container {
+        text-align: center;
+    }
+    .content {
+        .col-md-4 {
+            padding-left: 36px;
+            padding-right: 36px;
+            p {
+                text-align: justify;
+            }
+            h4 {
+                padding-top: 12px;
+                padding-bottom: 12px;
+            }
+        }
+        h4 {
+            font-family: @font_3;
+        }
+    }
+}
+
+#dashboard {}
